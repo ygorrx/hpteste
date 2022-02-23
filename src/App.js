@@ -19,7 +19,7 @@ const endIndex = startIndex + itensPerPage;
 const currentPosts = post.slice(startIndex, endIndex);
 
 React.useEffect(() => {
-  axios.get('http://hp-api.herokuapp.com/api/characters?_start')
+  axios.get('https://hp-api-changes.herokuapp.com/api/characters')
   .then((response) => {
     // console.log(response);
     
