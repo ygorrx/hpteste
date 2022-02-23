@@ -1,17 +1,28 @@
 import React from 'react'
 import axios from 'axios';
+import Image from './Image'
+
 
 import './App.css';
+import PaginationComponents from './Components/PaginationComponents';
 
 function App() {
 
 const [post, setPosts] = React.useState([]);
-console.log(post);
-const [loading, setLoading] = React.useState(true)
+const [itensPerPage, setItensPerPage] = React.useState(10);
+const [currentPage, setCurrentPage] = React.useState(0);
+const [loading, setLoading] = React.useState(true);
+
+const pages = Math.ceil(post.length / itensPerPage);
+const startIndex = currentPage*itensPerPage;
+const endIndex = startIndex + itensPerPage;
+const currentPosts = post.slice(startIndex, endIndex);
 
 React.useEffect(() => {
-  axios.get('https://wizard-world-api.herokuapp.com/Houses')
+  axios.get('http://hp-api.herokuapp.com/api/characters?_start')
   .then((response) => {
+    // console.log(response);
+    
     setPosts(response.data);
     setLoading(false);
    
@@ -26,21 +37,19 @@ if(loading === true) return <div class="loadingio-spinner-reload-z7cn6fgrmxt"><d
 </div></div>
 
 
-	return(
+	return (
+    <>
+    <PaginationComponents pages={pages} setCurrentPage={setCurrentPage}/>
 		<div className="app">
-
-			<div className="cards">
-        {post.map((post, key) => {
+    		<div className="cards">
+        {currentPosts.map((post, key) => {
           return (
           <div className="card" key={key} >
 					<div className="card-body" >
+            <Image className="image" src={post.image}/>
 						<h1>{post.name}</h1>
-            <ul>
-              <li>Animal da casa: {post.animal}</li>
-              <li>Sala comunal: {post.commonRoom}</li>
-              <li>Fundador: {post.founder}</li>
-            </ul>
-						<div className="line"></div>
+            <h2>{post.house}</h2>
+          	<div className="line"></div>
 						</div>
 				</div>
         )
@@ -48,9 +57,9 @@ if(loading === true) return <div class="loadingio-spinner-reload-z7cn6fgrmxt"><d
        			
 			</div>
 
-		</div>
-	)
-
+		 </div>
+     </>
+)
 }
 
 export default App;
