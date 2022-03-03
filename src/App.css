@@ -42,9 +42,9 @@
 }
 
 .card:hover{
-  background-size: 125% 125%;
-  background-position: 50% 50%;
-  transition: 0.6s;
+  background-size: 600px !important;
+  background-position: left !important;
+  transition: 0.6s !important;
  }
 
  .card-body h1, h2{

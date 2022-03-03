@@ -47,6 +47,7 @@ if(loading === true) return <div class="loadingio-spinner-reload-z7cn6fgrmxt"><d
           <div className="card" key={key} 
           style={{backgroundImage: `url('${post.image}')`,
           backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
           backgroundSize: '300px'}}>
 					<div className="card-body">
            	<h1>{post.name}</h1>
