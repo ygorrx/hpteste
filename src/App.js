@@ -9,7 +9,7 @@ import PaginationComponents from './Components/PaginationComponents';
 function App() {
 
 const [post, setPosts] = React.useState([]);
-const [itensPerPage, setItensPerPage] = React.useState(10);
+const [itensPerPage, setItensPerPage] = React.useState(20);
 const [currentPage, setCurrentPage] = React.useState(0);
 const [loading, setLoading] = React.useState(true);
 
@@ -44,10 +44,12 @@ if(loading === true) return <div class="loadingio-spinner-reload-z7cn6fgrmxt"><d
     		<div className="cards">
         {currentPosts.map((post, key) => {
           return (
-          <div className="card" key={key} >
-					<div className="card-body" >
-            <Image className="image" src={post.image}/>
-						<h1>{post.name}</h1>
+          <div className="card" key={key} 
+          style={{backgroundImage: `url('${post.image}')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '300px'}}>
+					<div className="card-body">
+           	<h1>{post.name}</h1>
             <h2>{post.house}</h2>
           	<div className="line"></div>
 						</div>
