@@ -1,0 +1,89 @@
+
+.header{
+    box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #1A1730;
+    top: 0px;
+}
+
+.logoHP{
+    width: 80px;
+    height: 80px;
+    padding-left: 1rem;
+}
+
+.nav{
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 0.5rem 0;
+}
+
+.navigation{
+    width: 50%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+    text-decoration: none;
+       
+}
+
+.menu a{
+    margin-right: 10px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: #d1c5ab;
+    font-family: var(--type-first);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.menu a:hover{
+    color: white;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
