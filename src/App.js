@@ -3,6 +3,8 @@ import './App.css';
 import Cards from './Components/Cards';
 import Header from './Components/Header';
 import Home from './Components/Home';
+import History from './Components/History';
+
 
 function App() {
 
@@ -10,6 +12,7 @@ function App() {
     <>
         <Header/>
         <Home/>
+        <History/>
         <Cards/>
     </>
 )

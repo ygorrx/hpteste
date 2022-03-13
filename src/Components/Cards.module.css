@@ -1,22 +1,54 @@
 .app {
 	
-	padding: 7rem 0;
-	background-color: #4e4e4e;
+padding-top: 5%;
+  padding-bottom: 1%;
+	background-color: #1f1b35;
 
-	display: flex;
-	justify-content: space-between;
- 
+  display: grid; 
+  grid-template-columns: 0.2fr 1.6fr; 
+  grid-template-rows: 0.4fr 2.1fr; 
+  align-items: center;
+  justify-items: center;
+  position: relative;
+   
+}
+
+.scroll{
+  width: 20%;
+  height: auto;
+  grid-column-start: 1; 
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.title {
+  font-family: var(--type-first);
+  font-size: 1.6rem;
+  color: #d4c6a9;
+  grid-column-start: 1; 
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-bottom: 30px;
+  margin-left: 18%;
+  justify-self: start;
+  align-self: center;
 }
 
 .cards{
+  grid-column-start: 2; 
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .border {
-  height: 269px;
-  width: 190px;
+  height: 213px;
+  width: 150px;
   background: transparent;
   border-radius: 10px;
   transition: border 1s;
@@ -25,8 +57,8 @@
 
 .border:hover{
   border: 1px solid white;
-  height: 269px;
-  width: 190px;
+  height: 213px;
+  width: 150px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   transition: border 1s;
@@ -41,8 +73,8 @@
   margin-bottom: 2em;
   margin-left: 1em;
   margin-right: 1em;
-  width: 200px;
-  height: 279px;
+  width: 160px;
+  height: 223px;
   border-radius: 10px;
   box-shadow: 0 70px 63px -60px #000000;
   background-color: #333;
@@ -57,12 +89,15 @@
 }
 
 .cardBody{
-  width: 200px;
-  height: 279px;
+  width: 140px;
+  height: 203px;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
  .cardBody h1, h2{
    opacity: 0;
+   font-family: var(--type-first);
   
  }
 
@@ -70,18 +105,20 @@
   
   margin: 20px;
   color: white;
-	font-family: Heebo;
-	font-size: 1.6rem;
+	font-size: 1rem;
   opacity: 1;
   transition: opacity 1s;
+  word-wrap: break-word;
 }
 
 .cardBody:hover h2{
-  
-  margin: 20px;
+  max-width: 140px;
+  margin-left: 20px;
+  margin-bottom: 5px;
   color: white;
 	font-family: Raleway;
-	font-size: 1rem;
+	font-size: 0.6rem;
   opacity: 1;
 	transition: opacity 1s;
+  word-wrap: break-word;
 }

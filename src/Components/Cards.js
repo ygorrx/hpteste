@@ -2,10 +2,11 @@ import React from 'react'
 import axios from 'axios';
 import PaginationComponents from './PaginationComponents';
 import styles from './Cards.module.css';
+import {ReactComponent as ScrollArrow} from '../Assets/scroll-arrow-2.svg';
 
 const Cards = () => {
   const [post, setPosts] = React.useState([]);
-  const [itensPerPage, setItensPerPage] = React.useState(20);
+  const [itensPerPage, setItensPerPage] = React.useState(10);
   const [currentPage, setCurrentPage] = React.useState(0);
   const [loading, setLoading] = React.useState(true);
   
@@ -35,24 +36,25 @@ const Cards = () => {
   
     return (
       <>
-      <PaginationComponents pages={pages} setCurrentPage={setCurrentPage}/>
       <div className={styles.app}>
+         <ScrollArrow className={styles.scroll}/>
+         <h1 className={styles.title}>Characters</h1>
           <div className={styles.cards}>
-          {currentPosts.map((post, key) => {
+            {currentPosts.map((post, key) => {
             return (
             <div className={styles.card} key={key} 
             style={{backgroundImage: `url('${post.image}')`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            backgroundSize: '230px'}}>
+            backgroundSize: '180px'}}>
             <div className={styles.border}>
               <div className={styles.cardBody}>
-               <h1>{post.name}</h1>
-              <h2>House: {post.house}</h2>
-              <h2>Species: {post.species}</h2>
-              <h2>Played by: {post.actor}</h2>
+                <h1>{post.name}</h1>
+                <h2>House: {post.house}</h2>
+                <h2>Species: {post.species}</h2>
+                <h2>Played by: {post.actor}</h2>
               </div>
-              </div>
+            </div>
           </div>
           )
           })}
@@ -60,6 +62,7 @@ const Cards = () => {
         </div>
   
        </div>
+       <PaginationComponents pages={pages} setCurrentPage={setCurrentPage}/>
        </>
   )
 }
