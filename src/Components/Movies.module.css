@@ -133,6 +133,7 @@
 
 .titleModal{
     color:#d4c6a9;
+    padding-right: 3rem;
     font-family: var(--type-first);
     font-size: 1.6rem;
     margin-top: 2rem;
