@@ -4,6 +4,7 @@ import Cards from './Components/Cards';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import History from './Components/History';
+import Movies from './Components/Movies';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Home/>
         <History/>
         <Cards/>
+        <Movies/>
     </>
 )
 }
