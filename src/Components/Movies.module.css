@@ -38,23 +38,18 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 1rem;
+    }
   
   .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2em 1em;
-    margin-bottom: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
-    width: 160px;
-    height: 223px;
-    border-radius: 10px;
+    
+   
+    width: 190px;
+    height: 293px;
+    border-radius: 4px;
     box-shadow: 0 70px 63px -60px #000000;
     background-color: #333;
     color: #fff;
@@ -63,23 +58,34 @@
   }
   
   .card:hover{
-    background-size: 300px !important;
-    background-position: left !important;
-    transition: 0.6s !important;
+    transition:all .4s linear;
+    transform:scale(1.04);
+    border: solid 1.5px #f3dfb7;
   }
   
   .cardBody{
-    width: 140px;
-    height: 203px;
+    width: 190px;
+    height: 293px;
+    border-radius: 4px;
     word-wrap: break-word;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
   }
   
-  .cardBody h1{
-  
+  .cardBody:hover{
+    opacity: 1;
+    background-color: rgba(31,27,53,0.7);
+  }
+
+  .cardBody:hover > h1{
+    
     margin: 20px;
-    color: white;
-    font-size: 1rem;
+    color: #f3dfb7;
+    font-size: 1.1rem;
     opacity: 1;
     transition: opacity 1s;
     word-wrap: break-word;
