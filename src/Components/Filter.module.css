@@ -1,0 +1,23 @@
+.filterContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterContainer button{
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    border: none;
+    background: white;
+    color: blueviolet;
+    border-radius: 1rem;
+    border: 2px solid rgb(28,36,53);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filterContainer button:focus{
+  background: rgb(65,98,168);
+  color: wheat;  
+}

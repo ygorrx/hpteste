@@ -5,8 +5,8 @@ padding-top: 5%;
 	background-color: #1f1b35;
 
   display: grid; 
-  grid-template-columns: 0.2fr 1.6fr; 
-  grid-template-rows: 0.4fr 2.1fr; 
+  grid-template-columns: 0.5fr 1.2fr 1.3fr 1fr; 
+  grid-template-rows: 0.3fr 1.7fr; 
   align-items: center;
   justify-items: center;
   position: relative;
@@ -26,7 +26,7 @@ padding-top: 5%;
   font-family: var(--type-first);
   font-size: 1.6rem;
   color: #d4c6a9;
-  grid-column-start: 1; 
+  grid-column-start: 2; 
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -38,12 +38,24 @@ padding-top: 5%;
 
 .cards{
   grid-column-start: 2; 
-  grid-column-end: 3;
+  grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.filterPosition{
+  width: 400px;
+  height: 50px;
+  grid-column-start: 3; 
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .border {

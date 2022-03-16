@@ -3,17 +3,24 @@ import axios from 'axios';
 import PaginationComponents from './PaginationComponents';
 import styles from './Cards.module.css';
 import {ReactComponent as ScrollArrow} from '../Assets/scroll-arrow-2.svg';
+import Filter from './Filter';
 
 const Cards = () => {
   const [post, setPosts] = React.useState([]);
   const [itensPerPage, setItensPerPage] = React.useState(10);
   const [currentPage, setCurrentPage] = React.useState(0);
   const [loading, setLoading] = React.useState(true);
+  const [filtered, setFiltered] = React.useState([]);
+  const [activeHouse, setActiveHouse] = React.useState('');
+  console.log(activeHouse);
+  
   
   const pages = Math.ceil(post.length / itensPerPage);
   const startIndex = currentPage*itensPerPage;
   const endIndex = startIndex + itensPerPage;
-  const currentPosts = post.slice(startIndex, endIndex);
+  const currentPosts = filtered.slice(startIndex, endIndex);
+  const currentAll = post.slice(startIndex, endIndex);
+  
   
   React.useEffect(() => {
     axios.get('https://hp-api-changes.herokuapp.com/api/characters')
@@ -21,6 +28,7 @@ const Cards = () => {
       // console.log(response);
       
       setPosts(response.data);
+      setFiltered(response.data);
       setLoading(false);
      
     }).catch(() => {
@@ -39,8 +47,17 @@ const Cards = () => {
       <div className={styles.app}>
          <ScrollArrow className={styles.scroll}/>
          <h1 className={styles.title}>Characters</h1>
-          <div className={styles.cards}>
-            {currentPosts.map((post, key) => {
+         <div className={styles.filterPosition}>
+         <Filter
+         post={post}
+         setFiltered={setFiltered}
+         activeHouse={activeHouse}
+         setActiveHouse={setActiveHouse}
+         currentPost={currentAll}
+         />
+         </div>:
+         <div className={styles.cards}>
+            {(currentAll,currentPosts).map((post, key) => {
             return (
             <div className={styles.card} key={key} 
             style={{backgroundImage: `url('${post.image}')`,
