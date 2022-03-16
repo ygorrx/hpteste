@@ -21,6 +21,7 @@ const Filter = ({setActiveHouse, post, activeHouse, setFiltered,currentAll}) => 
         <button onClick={()=> setActiveHouse('Hufflepuff')}>Hufflepuff</button>
         <button onClick={()=> setActiveHouse('Ravenclaw')}>Ravenclaw</button>
         <button onClick={()=> setActiveHouse('Slytherin')}>Slytherin</button>
+        <button onClick={()=> setActiveHouse('')}>House Undefined</button>
     </div>
   )
 }

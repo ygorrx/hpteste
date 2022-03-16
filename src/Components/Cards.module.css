@@ -1,6 +1,6 @@
 .app {
-	
-padding-top: 5%;
+	width: 100vw;
+  padding-top: 5%;
   padding-bottom: 1%;
 	background-color: #1f1b35;
 
@@ -44,17 +44,21 @@ padding-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .filterPosition{
-  width: 400px;
-  height: 50px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-right: 1rem;
   grid-column-start: 3; 
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  
   
 }
 
