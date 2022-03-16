@@ -15,13 +15,20 @@ const Cards = () => {
   console.log(activeHouse);
   
   
-  const pages = Math.ceil(post.length / itensPerPage);
+  const pages = Math.ceil(filtered.length / itensPerPage);
   const startIndex = currentPage*itensPerPage;
+  console.log(startIndex)
   const endIndex = startIndex + itensPerPage;
+  console.log(endIndex)
   const currentPosts = filtered.slice(startIndex, endIndex);
+  console.log(currentPosts)
   const currentAll = post.slice(startIndex, endIndex);
   
-  
+  React.useEffect(()=>{
+    setCurrentPage(0);
+  }, [itensPerPage])
+
+
   React.useEffect(() => {
     axios.get('https://hp-api-changes.herokuapp.com/api/characters')
     .then((response) => {
@@ -54,10 +61,12 @@ const Cards = () => {
          activeHouse={activeHouse}
          setActiveHouse={setActiveHouse}
          currentPost={currentAll}
+         itensPerPage={itensPerPage}
+         setItensPerPage={setItensPerPage}
          />
          </div>:
          <div className={styles.cards}>
-            {(currentAll,currentPosts).map((post, key) => {
+            {currentPosts.map((post, key) => {
             return (
             <div className={styles.card} key={key} 
             style={{backgroundImage: `url('${post.image}')`,

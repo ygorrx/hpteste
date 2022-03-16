@@ -4,7 +4,8 @@ import styles from './Filter.module.css'
 const Filter = ({setActiveHouse, post, activeHouse, setFiltered,currentAll}) => {
 
  React.useEffect(()=>{
-    if(activeHouse === currentAll){
+  
+  if(activeHouse === currentAll){
         setFiltered(post);
         return
     }
