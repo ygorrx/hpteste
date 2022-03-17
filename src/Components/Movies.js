@@ -22,7 +22,6 @@ const moviesList = [
   const initialState = moviesList[0]; 
 
   const [modailIsOpen, setModailIsOpen] = React.useState(false);
-  const [movies, setMovies] = React.useState(moviesList);
   const [selectMovie, setSelectedMovie] = React.useState(initialState);
   
 

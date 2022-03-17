@@ -12,6 +12,8 @@
     color: #d4c6a9;
     margin: 0 5px 10px;
     border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .button:hover,

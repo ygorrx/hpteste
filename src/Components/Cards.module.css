@@ -41,6 +41,7 @@
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -48,7 +49,7 @@
 }
 
 .filterPosition{
-  width: 100%;
+  width: 800px;
   height: auto;
   overflow: hidden;
   margin-right: 1rem;

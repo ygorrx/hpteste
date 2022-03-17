@@ -6,14 +6,16 @@ import {ReactComponent as ScrollArrow} from '../Assets/scroll-arrow-2.svg';
 import Filter from './Filter';
 
 const Cards = () => {
+
+  
+
   const [post, setPosts] = React.useState([]);
   const [itensPerPage, setItensPerPage] = React.useState(10);
   const [currentPage, setCurrentPage] = React.useState(0);
   const [loading, setLoading] = React.useState(true);
   const [filtered, setFiltered] = React.useState([]);
   const [activeHouse, setActiveHouse] = React.useState('');
-  console.log(activeHouse);
-  
+ 
   
   const pages = Math.ceil(filtered.length / itensPerPage);
   const startIndex = currentPage*itensPerPage;
@@ -24,11 +26,7 @@ const Cards = () => {
   console.log(currentPosts)
   const currentAll = post.slice(startIndex, endIndex);
   
-  React.useEffect(()=>{
-    setCurrentPage(0);
-  }, [itensPerPage])
-
-
+ 
   React.useEffect(() => {
     axios.get('https://hp-api-changes.herokuapp.com/api/characters')
     .then((response) => {
@@ -43,6 +41,7 @@ const Cards = () => {
     })
   
   }, []);
+
   
   if(loading === true) return <div class="loadingio-spinner-reload-z7cn6fgrmxt"><div class="ldio-jy95qxl5sx">
   <div><div></div><div></div><div></div></div>

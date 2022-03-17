@@ -114,6 +114,7 @@
   }
 
   .container{
+      border: none;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -121,16 +122,43 @@
   }
 
   .modal{
+    border: none;
     position: fixed;
     width: 800px;
     height: 500px;
-    top: 59%;
-    left: 50%;
+    top: 25%;
+    left: 27%;
     right: auto;
     bottom: auto;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    
+   
     background: #1f1b35;
+    animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @-webkit-keyframes flip-in-hor-bottom {
+    0% {
+      
+              transform: rotateX(80deg);
+      opacity: 0;
+    }
+    100% {
+      
+              transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-hor-bottom {
+    0% {
+      
+              transform: rotateX(80deg);
+      opacity: 0;
+    }
+    100% {
+      
+              transform: rotateX(0);
+      opacity: 1;
+    }
   }
 
 .content{

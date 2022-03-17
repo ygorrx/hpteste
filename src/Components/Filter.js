@@ -14,14 +14,19 @@ const Filter = ({setActiveHouse, post, activeHouse, setFiltered,currentAll}) => 
     console.log(filtered);
     }, [activeHouse]); 
 
+    React.useEffect(()=>{
+      setActiveHouse(currentAll);
+    }, []);
+   
+    
   return (
     <div className={styles.filterContainer}>
-        <button onClick={()=> setActiveHouse(currentAll)}>All</button>
-        <button onClick={()=> setActiveHouse('Gryffindor')}>Gryffindor</button>
-        <button onClick={()=> setActiveHouse('Hufflepuff')}>Hufflepuff</button>
-        <button onClick={()=> setActiveHouse('Ravenclaw')}>Ravenclaw</button>
-        <button onClick={()=> setActiveHouse('Slytherin')}>Slytherin</button>
-        <button onClick={()=> setActiveHouse('')}>House Undefined</button>
+        <button className={styles.btn} onClick={()=> setActiveHouse(currentAll)}><span>All</span></button>
+        <button className={styles.btn} onClick={()=> setActiveHouse('Gryffindor')}><span>Gryffindor</span></button>
+        <button className={styles.btn} onClick={()=> setActiveHouse('Hufflepuff')}><span>Hufflepuff</span></button>
+        <button className={styles.btn} onClick={()=> setActiveHouse('Ravenclaw')}><span>Ravenclaw</span></button>
+        <button className={styles.btn} onClick={()=> setActiveHouse('Slytherin')}><span>Slytherin</span></button>
+        <button className={styles.btn} onClick={()=> setActiveHouse('')}><span>No House</span></button>
     </div>
   )
 }
