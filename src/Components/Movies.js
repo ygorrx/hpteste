@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './Movies.module.css';
 import {ReactComponent as ScrollArrow} from '../Assets/scroll-arrow-3.svg';
 import Modal from 'react-modal';
+import Trailer from '../Assets/trailer.svg'
+import Itunes from '../Assets/itunes.svg'
+import Hbo from '../Assets/hbo.svg'
 
 Modal.setAppElement('#root')
 
@@ -67,6 +70,12 @@ const moviesList = [
               <h1 className={styles.titleModal}>{selectMovie.title}</h1>
               <p className={styles.dateModal}>{selectMovie.date}</p>
               <p className={styles.sinopsisModal}>{selectMovie.sinopse}</p>
+              <ul className={styles.lista}>
+                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img img className={styles.trailerImage} src={Trailer} alt='trailer'/>
+                <h3>Watch Trailer</h3></a>
+                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img className={styles.itunesImage} src={Itunes}  alt='itunes'/></a>
+                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img img className={styles.hboImage} src={Hbo}  alt='hbo'/></a>
+              </ul>
             </div>
         
         

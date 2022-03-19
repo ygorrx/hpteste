@@ -1,5 +1,5 @@
 .movies{
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     padding-top: 5%;
     padding-bottom: 1%;
@@ -36,7 +36,8 @@
   }
 
   .carousel{
-    width: 50%;
+    width: 100%;
+    margin-right: 2rem;
     grid-column-start: 2; 
     grid-column-end: 3;
     grid-row-start: 2;
@@ -119,6 +120,7 @@
       align-items: center;
       justify-content: center;
       align-self: center;
+      background: #1f1b35;
   }
 
   .modal{
@@ -130,8 +132,7 @@
     left: 27%;
     right: auto;
     bottom: auto;
-    
-   
+     
     background: #1f1b35;
     animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
@@ -166,7 +167,7 @@
     height: 500px;
     display: grid; 
     grid-template-columns: 1.1fr 0.9fr; 
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1fr 0.8fr;
 }
 
 .titleModal{
@@ -186,7 +187,7 @@
     grid-column-start: 1; 
     grid-column-end: 2;
     grid-row-start:1;
-    grid-row-end: 5;
+    grid-row-end: 6;
 }
 
 .dateModal{
@@ -208,4 +209,57 @@
     grid-column-end: 3;
     grid-row-start:3;
     grid-row-end: 5;
+}
+
+.lista{
+  grid-column-start: 2; 
+  grid-column-end: 3;
+  grid-row-start:5;
+  grid-row-end: 6;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  width: 50%;
+  margin-left: 40%;
+}
+
+.lista img{
+  height: auto;
+}
+
+.lista a{
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lista h3 {
+  font-size: 0.5rem;
+  color: #d4c6a9;
+}
+
+.itunesImage{
+  width: 80%;
+}
+
+.hboImage{
+  width: 60%;
+}
+
+.trailerImage{
+  width: 60%;
+}
+
+@media (max-width: 1920px){
+ .carousel{
+   width: 80%;
+ }
+ .modal{
+    top: 19%;
+    left: 18%;
+    right: auto;
+    bottom: auto;
+}
 }

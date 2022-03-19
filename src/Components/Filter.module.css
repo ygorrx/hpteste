@@ -17,6 +17,7 @@ button{
   height: 40px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
+  font-size: 0.7rem;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -28,6 +29,7 @@ button{
   padding: 0;
   border: none;
 }
+
 
 .btn span {
   position: relative;
@@ -96,4 +98,20 @@ button{
   background: #1f1b35;
   color: #d4c6a9;
   border: 2px solid #d4c6a9;
+}
+
+@media (max-width: 1920px){
+  button{
+    margin: 10px 20px;
+    
+  }
+   
+  .filterContainer{
+    width: 80%;
+  }
+
+  .filterContainer button{
+    width: 100px;
+    height: 40px;
+    }
 }
