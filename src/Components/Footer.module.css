@@ -1,0 +1,21 @@
+.footer{
+    width: 100vw;
+    background: #d4c6a9;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    height: 8rem;
+    text-align: center;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 10%;
+    height: auto;
+}
+
+.footer p{
+    margin-top: .5rem;
+    color: #1f1b35;
+}

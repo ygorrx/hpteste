@@ -6,6 +6,7 @@ import Home from './Components/Home';
 import History from './Components/History';
 import Movies from './Components/Movies';
 import Books from './Components/Books';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Cards/>
         <Movies/>
         <Books/>
+        <Footer/>
     </>
 )
 }

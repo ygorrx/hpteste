@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './Books.module.css';
 import {ReactComponent as ScrollArrow} from '../Assets/scroll-arrow-4.svg';
 import Modal from 'react-modal';
-import Trailer from '../Assets/trailer.svg'
-import Itunes from '../Assets/itunes.svg'
-import Hbo from '../Assets/hbo.svg'
+import Kindle from '../Assets/kindle.svg'
+import Amazon from '../Assets/amazon.svg'
+
 
 Modal.setAppElement('#root')
 
@@ -71,10 +71,10 @@ const moviesList = [
               <p className={styles.dateModal}>{selectMovie.date}</p>
               <p className={styles.sinopsisModal}>{selectMovie.sinopse}</p>
               <ul className={styles.lista}>
-                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img img className={styles.trailerImage} src={Trailer} alt='trailer'/>
-                <h3>Watch Trailer</h3></a>
-                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img className={styles.itunesImage} src={Itunes}  alt='itunes'/></a>
-                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img img className={styles.hboImage} src={Hbo}  alt='hbo'/></a>
+                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img img className={styles.trailerImage} src={Kindle} alt='kindle'/>
+                </a>
+                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img className={styles.itunesImage} src={Amazon}  alt='amazon'/></a>
+                
               </ul>
             </div>
         
