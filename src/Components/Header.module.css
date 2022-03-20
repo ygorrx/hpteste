@@ -5,6 +5,10 @@
     top: 0px;
 }
 
+.header svg {
+    fill: #D3C6A9;
+  }
+
 .logoHP{
     width: 80px;
     height: 80px;
