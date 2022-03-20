@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import PaginationComponents from './PaginationComponents';
 import styles from './Cards.module.css';
-import {ReactComponent as ScrollArrow} from '../Assets/scroll-arrow-2.svg';
+import arrow2 from '../Assets/scroll-arrow-2.svg'
 import Filter from './Filter';
 
 const Cards = () => {
@@ -50,8 +50,8 @@ const Cards = () => {
   
     return (
       <>
-      <div className={styles.app}>
-         <ScrollArrow className={styles.scroll}/>
+      <div className={`${styles.app} animeLeft`}>
+         <img className={styles.scroll} src={arrow2} />
          <h1 className={styles.title}>Characters</h1>
          <div className={styles.filterPosition}>
          <Filter

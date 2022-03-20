@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Books.module.css';
-import {ReactComponent as ScrollArrow} from '../Assets/scroll-arrow-4.svg';
+import arrow4 from '../Assets/scroll-arrow-4.svg'
 import Modal from 'react-modal';
 import Kindle from '../Assets/kindle.svg'
 import Amazon from '../Assets/amazon.svg'
@@ -39,8 +39,8 @@ const moviesList = [
 
   return (
     
-    <div className={styles.movies}>
-      <ScrollArrow className={styles.scroll}/>
+    <div className={`${styles.books} animeLeft`}>
+      <img className={styles.scroll} src={arrow4} />
       <h1 className={styles.title}>Books</h1>
       <div className={styles.carousel}>
            {moviesList.map((post, key) => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
-import {ReactComponent as Logo} from '../Assets/hplogo2.svg';
+
+import imageLogo from '../Assets/hplogo.svg';
 import { NavLink, Link } from 'react-router-dom';
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
       <nav className={styles.nav}>
           
         <div>
-         <Link to="/"><Logo className={styles.logoHP}/></Link>
+         <Link to="/"><img className={styles.logoHP} src={imageLogo} /></Link>
         </div>
         <div className={styles.navigation}>
         <ul className={styles.menu}>

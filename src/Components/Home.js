@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './Home.module.css';
-import {ReactComponent as LogoMain} from '../Assets/hp-logo-main.svg';
+import logoMain from '../Assets/hp-logo-main.svg';
 
 
 const Home = () => {
   return (
     <div className={styles.home}>
-        <LogoMain className={styles.logo}/>
+        <img className={styles.logo} src={logoMain} />
         <h1 className={styles.title}>Welcome to the world of magic!</h1>        
     </div>
   )
