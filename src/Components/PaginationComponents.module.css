@@ -3,13 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f1b35;
+    background-color: transparent;
 }
 
 .button{
     width: 25px;
     height: 25px;
-    background-color: #1f1b35;
+    background-color: transparent;
     color: #d4c6a9;
     margin: 0 5px 10px;
     border: none;

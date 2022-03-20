@@ -2,11 +2,14 @@
 	width: 100vw;
   padding-top: 5%;
   padding-bottom: 1%;
-	background-color: #1f1b35;
+	background-image: url(../Assets/banner-chars.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   display: grid; 
   grid-template-columns: 0.5fr 1.2fr 1.3fr 1fr; 
-  grid-template-rows: 0.3fr 1.7fr; 
+  grid-template-rows: 0.3fr 2.3fr; 
   align-items: center;
   justify-items: center;
   position: relative;
@@ -37,11 +40,26 @@
 }
 
 .cards{
+ 
+  width: 100%;
   grid-column-start: 2; 
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
   margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.pages{
+  width: 100vw;
+  margin-top: 2rem;
+  grid-column-start: 1; 
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

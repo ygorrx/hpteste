@@ -80,14 +80,14 @@ const Cards = () => {
                 <h2>Played by: {post.actor}</h2>
               </div>
             </div>
-          </div>
+            </div>
           )
           })}
-               
+          <PaginationComponents pages={pages} setCurrentPage={setCurrentPage}/>      
         </div>
-  
+        
        </div>
-       <PaginationComponents pages={pages} setCurrentPage={setCurrentPage}/>
+       
        </>
   )
 }
