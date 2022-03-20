@@ -71,7 +71,7 @@ const moviesList = [
               <p className={styles.dateModal}>{selectMovie.date}</p>
               <p className={styles.sinopsisModal}>{selectMovie.sinopse}</p>
               <ul className={styles.lista}>
-                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img img className={styles.trailerImage} src={Kindle} alt='kindle'/>
+                <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img className={styles.trailerImage} src={Kindle} alt='kindle'/>
                 </a>
                 <a href='www.google.com.br' target="_blank" rel="noopener noreferrer" ><img className={styles.itunesImage} src={Amazon}  alt='amazon'/></a>
                 
