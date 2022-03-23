@@ -26,7 +26,7 @@ const Filter = ({setActiveHouse, post, activeHouse, setFiltered,currentAll}) => 
         <button className={styles.btn} onClick={()=> setActiveHouse('Hufflepuff')}><span>Hufflepuff</span></button>
         <button className={styles.btn} onClick={()=> setActiveHouse('Ravenclaw')}><span>Ravenclaw</span></button>
         <button className={styles.btn} onClick={()=> setActiveHouse('Slytherin')}><span>Slytherin</span></button>
-        <button className={styles.btn} onClick={()=> setActiveHouse('')}><span>No House</span></button>
+        <button className={styles.btn} onClick={()=> setActiveHouse('Unknown')}><span>No House</span></button>
     </div>
   )
 }
