@@ -1,6 +1,6 @@
 .history {
     width: 100vw;
-    height: calc(100vh + 8rem);
+    height: 100vh;
     background-color: #1f1b35;
     font-size: 1.6rem;
     display: grid; 
@@ -123,6 +123,7 @@
   .history {
     grid-template-columns: 0.4fr 2.1fr 0.4fr; 
     grid-template-rows: 1.3fr 1.3fr; 
+    height: 1200px;
   }
 
   .image{
