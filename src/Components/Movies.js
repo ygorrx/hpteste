@@ -8,6 +8,8 @@ import Hbo from '../Assets/hbo.svg'
 
 Modal.setAppElement('#root')
 
+Modal.defaultStyles.overlay.backgroundColor = 'rgba(0,0,0,.8)';
+
 const Movies = () => {
 
 
