@@ -26,7 +26,7 @@
 
   .title {
     font-family: var(--type-first);
-    font-size: 1.6rem;
+    font-size: 3rem;
     color: #d4c6a9;
     grid-column-start: 1; 
     grid-column-end: 3;
@@ -36,7 +36,34 @@
     margin-left: 18%;
     justify-self: start;
     align-self: center;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   }
+
+    @-webkit-keyframes tracking-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+    @keyframes tracking-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
 
   .carousel{
     width: 100%;
@@ -252,13 +279,117 @@
 }
 
 @media (max-width: 1920px){
- .carousel{
-   width: 80%;
+  .carousel{
+    width: 80%;
+  }
+  .modal{
+     top: 19%;
+     left: 27%;
+     right: auto;
+     bottom: auto;
  }
- .modal{
-    top: 19%;
-    left: 18%;
-    right: auto;
-    bottom: auto;
+ }
+ 
+ @media (max-width: 1440px){
+   
+   .modal{
+      top: 19%;
+      left: 22%;
+      right: auto;
+      bottom: auto;
+  }
+  .scroll{
+    width: 30%;
+  }
+  }
+ 
+  @media (max-width: 1024px){
+   
+   .modal{
+      top: 19%;
+      left: 12%;
+      right: auto;
+      bottom: auto;
+  }
+  .scroll{
+    width: 50%;
+  }
+  }
+ 
+  @media (max-width: 768px){
+   
+   .modal{
+     width: 570px;
+      top: 19%;
+      left: 12%;
+      right: auto;
+      bottom: auto;
+  }
+ 
+  .content{
+   width: 570px;
+   height: 500px;
+   display: grid; 
+   grid-template-columns: 0.9fr 0.8fr 1.3fr; 
+   grid-template-rows: 0.3fr 0.2fr 0.4fr 1.7fr 3fr;
+ }
+ 
+ .titleModal{
+   margin-left: 2rem;
+   font-size: 1.6rem;
+   margin-top: 2rem;
+   grid-column-start: 2; 
+   grid-column-end: 4;
+   grid-row-start:1;
+   grid-row-end: 2;
+ }
+ 
+ .imageModal{
+   
+   grid-column-start: 1; 
+   grid-column-end: 2;
+   grid-row-start:1;
+   grid-row-end: 6;
+ }
+ 
+ .dateModal{
+   margin-left: 2rem;
+   margin-top: 1rem;
+   font-size: 1rem;
+   grid-column-start: 2; 
+   grid-column-end: 4;
+   grid-row-start:2;
+   grid-row-end: 3;
+ }
+ 
+ .sinopsisModal{
+   color:#eee;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   padding-top: 5px;
+   margin-left: 7%;
+   font-size: 1rem;
+   line-height: 1.2rem;
+   text-align: justify;
+   grid-column-start: 2; 
+   grid-column-end: 4;
+   grid-row-start:4;
+   grid-row-end: 6;
+ }
+ 
+ .lista{
+ grid-column-start: 2; 
+ grid-column-end: 34;
+ grid-row-start:3;
+ grid-row-end: 4;
+ display: flex;
+ justify-content: space-evenly;
+ align-content: flex-end;
+ width: 50%;
+ margin-top: 1rem;
+ margin-left: 7%;
+ }
+ 
+ .scroll{
+  width: 50%;
 }
-}
+  }

@@ -115,3 +115,11 @@ button{
     height: 40px;
     }
 }
+
+@media (max-width: 680px){
+  .filterContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+  }
+}

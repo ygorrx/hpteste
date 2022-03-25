@@ -302,6 +302,9 @@
      right: auto;
      bottom: auto;
  }
+ .scroll{
+  width: 30%;
+}
  }
 
  @media (max-width: 1024px){
@@ -312,6 +315,9 @@
      right: auto;
      bottom: auto;
  }
+ .scroll{
+  width: 50%;
+}
  }
 
  @media (max-width: 768px){
@@ -387,4 +393,7 @@ margin-top: 1rem;
 margin-left: 7%;
 }
 
+.scroll{
+  width: 50%;
+}
  }
