@@ -4,6 +4,7 @@ import PaginationComponents from './PaginationComponents';
 import styles from './Cards.module.css';
 import arrow2 from '../Assets/scroll-arrow-2.svg'
 import Filter from './Filter';
+import Loading from './Helper/Loading';
 
 const Cards = () => {
 
@@ -43,9 +44,7 @@ const Cards = () => {
   }, []);
 
   
-  if(loading === true) return <div class="loadingio-spinner-reload-z7cn6fgrmxt"><div class="ldio-jy95qxl5sx">
-  <div><div></div><div></div><div></div></div>
-  </div></div>
+  if(loading === true) return <Loading/>
   
   
     return (

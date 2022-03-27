@@ -27,6 +27,7 @@ const moviesList = [
   const [modailIsOpen, setModailIsOpen] = React.useState(false);
   const [selectMovie, setSelectedMovie] = React.useState(initialState);
   
+  
 
   const handleSelectedMovie = (post) => {
     setSelectedMovie(post);
@@ -36,6 +37,8 @@ const moviesList = [
   function handleCloseModal(){
     setModailIsOpen(false);
   }
+
+ 
 
   return (
     

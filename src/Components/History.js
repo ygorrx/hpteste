@@ -2,7 +2,14 @@ import React from 'react'
 import styles from './History.module.css';
 import arrow1 from '../Assets/scroll-arrow-1.svg'
 
+
+
+
 const History = () => {
+
+  
+  
+
   return (
     <div className={`${styles.history} animeLeft`}>
         <img className={styles.scroll} src={arrow1} />

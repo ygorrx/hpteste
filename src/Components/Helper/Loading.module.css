@@ -1,0 +1,20 @@
+.wrapper{
+    position: absolute;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.loading{
+    margin: auto;
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -11,7 +11,7 @@ const Home = () => {
         <img className={styles.logo} src={logoMain} />
         <h1 className={styles.title}>Welcome to the world of magic!</h1>        
     </div>
-    <History/>
+   
     </>
   )
 }
