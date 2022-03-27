@@ -123,3 +123,29 @@ button{
     margin: 4rem 0;
   }
 }
+
+@media (max-width: 405px){
+  .filterContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    height: 50%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 325px){
+  button{
+    margin: 4px;
+  }
+  
+  .filterContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3(1fr);
+    align-content: center;
+    margin: 0;
+    height: 300px;
+    width: 300px;
+  }
+}

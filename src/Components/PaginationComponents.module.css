@@ -23,3 +23,14 @@
     color: #1f1b35;
     cursor: pointer;
 }
+
+@media (max-width: 680px){
+    .bg{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+}
