@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Loading.module.css'
-import * as loadingAnimation from '../../Assets/hp-loading-scene.mp4.lottie.json'
+import * as loadingAnimation from '../../Assets/loading.mp4.lottie.json'
 import Lottie from 'react-lottie';
 
 const Loading = () => {
