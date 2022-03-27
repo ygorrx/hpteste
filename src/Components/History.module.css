@@ -119,7 +119,7 @@
     grid-row-end: 3;
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1300px){
   .history {
     grid-template-columns: 0.4fr 2.1fr 0.4fr; 
     grid-template-rows: 1.3fr 1.3fr; 
