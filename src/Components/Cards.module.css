@@ -1,7 +1,7 @@
 .app {
 	width: 100vw;
- 
-	background-image: url(../Assets/banner-chars.png);
+  height: 100vh;
+  background-image: url(../Assets/banner-chars.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

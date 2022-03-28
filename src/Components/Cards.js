@@ -5,6 +5,7 @@ import styles from './Cards.module.css';
 import arrow2 from '../Assets/scroll-arrow-2.svg'
 import Filter from './Filter';
 import Loading from './Helper/Loading';
+import Head from './Head'
 
 
 const Cards = () => {
@@ -21,11 +22,11 @@ const Cards = () => {
   
   const pages = Math.ceil(filtered.length / itensPerPage);
   const startIndex = currentPage*itensPerPage;
-  console.log(startIndex)
+  
   const endIndex = startIndex + itensPerPage;
-  console.log(endIndex)
+ 
   const currentPosts = filtered.slice(startIndex, endIndex);
-  console.log(currentPosts)
+  
   const currentAll = post.slice(startIndex, endIndex);
   
  
@@ -39,7 +40,7 @@ const Cards = () => {
       setLoading(false);
      
     }).catch(() => {
-      console.log("deu erro")
+      
     })
   
   }, []);
@@ -50,9 +51,9 @@ const Cards = () => {
   
     return (
       <>
-   
+       <Head title="Characters" />
       <div className={`${styles.app} animeLeft`}>
-         <img className={styles.scroll} src={arrow2} />
+         <img className={styles.scroll} src={arrow2} alt='scroll' />
          <h1 className={styles.title}>Characters</h1>
          <div className={styles.filterPosition}>
          <Filter

@@ -4,6 +4,7 @@ import arrow4 from '../Assets/scroll-arrow-4.svg'
 import Modal from 'react-modal';
 import Kindle from '../Assets/kindle.svg'
 import Amazon from '../Assets/amazon.svg'
+import Head from './Head'
 
 
 Modal.setAppElement('#root')
@@ -42,14 +43,14 @@ const moviesList = [
 
   return (
     <>
-    
+     <Head title="Books" />
     <div className={`${styles.books} animeLeft`}>
-      <img className={styles.scroll} src={arrow4} />
+      <img className={styles.scroll} src={arrow4} alt='scroll' />
       <h1 className={styles.title}>Books</h1>
       <div className={styles.carousel}>
-           {moviesList.map((post, key) => {
+           {moviesList.map((post, keyBook) => {
             return (
-            <div className={styles.card} onClick={() => handleSelectedMovie(post)} key={key} 
+            <div className={styles.card} onClick={() => handleSelectedMovie(post)} key={keyBook} 
             style={{backgroundImage: `url('${post.image}')`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',

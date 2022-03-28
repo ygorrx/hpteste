@@ -46,7 +46,7 @@
     justify-self: start;
     align-self: center;
     font-family: var(--type-first);
-    font-size: 4rem;
+    font-size: 3rem;
     color: #d4c6a9;
     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -83,7 +83,7 @@
     background-color: transparent;
     color: #d4c6a9;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     overflow-y: scroll;
     border-color: transparent;
     padding-right: 10px;
