@@ -190,3 +190,10 @@
 .navMobile svg{
     margin-right: 0.5rem;
 }
+
+
+@media (min-width: 1600px){
+    .menu a{
+        font-size: 1.1rem;
+    }
+}

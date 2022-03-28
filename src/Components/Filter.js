@@ -11,7 +11,7 @@ const Filter = ({setActiveHouse, post, activeHouse, setFiltered,currentAll}) => 
     }
     const filtered = post.filter((card) => card.house === activeHouse);
     setFiltered(filtered);
-    console.log(filtered);
+    
     }, [activeHouse]); 
 
     React.useEffect(()=>{

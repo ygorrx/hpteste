@@ -1,6 +1,10 @@
 .app {
 	width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
+  overflow: hidden;
+  padding-top: 2%;
+  padding-bottom: 3%;
   background-image: url(../Assets/banner-chars.png);
   background-position: center top;
   background-repeat: no-repeat;
@@ -269,6 +273,12 @@
 }
 
 @media (max-width: 680px){
+
+  .app{
+    height: 1600px;
+  }
+  
+
   .title{
     margin-left: 60px;
   }
@@ -293,6 +303,11 @@
 }
 
 @media (max-width: 325px){
+  
+  .app{
+    height: 2600px;
+  }
+
   .title{
     margin-left: 20px;
   }
