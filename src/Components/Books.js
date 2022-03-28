@@ -4,7 +4,7 @@ import arrow4 from '../Assets/scroll-arrow-4.svg'
 import Modal from 'react-modal';
 import Kindle from '../Assets/kindle.svg'
 import Amazon from '../Assets/amazon.svg'
-
+import Head from './Head'
 
 Modal.setAppElement('#root')
 
@@ -41,7 +41,8 @@ const moviesList = [
  
 
   return (
-    
+    <>
+    <Head title="Books" />
     <div className={`${styles.books} animeLeft`}>
       <img className={styles.scroll} src={arrow4} />
       <h1 className={styles.title}>Books</h1>
@@ -85,8 +86,9 @@ const moviesList = [
       </Modal>
       </div>   
     </div>
-      
+      </>
   )
+
 }
 
 export default Movies
