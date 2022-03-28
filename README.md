@@ -65,6 +65,7 @@ The following tools were used in this project:
 - [Harry Potter API](https://hp-api.herokuapp.com/)
 - [Heroku](https://hp-api-changes.herokuapp.com/)
 - [Netlify](https://app.netlify.com/)
+- [Axios](https://www.npmjs.com/package/axios)
 
 ## :white_check_mark: Requirements ##
 

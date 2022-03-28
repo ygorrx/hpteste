@@ -7,14 +7,14 @@ import History from './Components/History';
 import Movies from './Components/Movies';
 import Books from './Components/Books';
 import Footer from './Components/Footer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
 
 	return (
     <>
-    <BrowserRouter>
+    <HashRouter>
         <Header/>
         <Routes>
            <Route path ='/' element={<Home/>}/>
@@ -24,7 +24,7 @@ function App() {
            <Route path ='books' element={<Books/>}/>                
         </Routes>
         <Footer/>
-    </BrowserRouter>
+    </HashRouter>
     </>
 )
 }
