@@ -5,7 +5,7 @@ import styles from './Cards.module.css';
 import arrow2 from '../Assets/scroll-arrow-2.svg'
 import Filter from './Filter';
 import Loading from './Helper/Loading';
-import Head from './Head';
+
 
 const Cards = () => {
 
@@ -50,7 +50,7 @@ const Cards = () => {
   
     return (
       <>
-      <Head title="Characters" />
+   
       <div className={`${styles.app} animeLeft`}>
          <img className={styles.scroll} src={arrow2} />
          <h1 className={styles.title}>Characters</h1>

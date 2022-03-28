@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 import Trailer from '../Assets/trailer.svg'
 import Itunes from '../Assets/itunes.svg'
 import Hbo from '../Assets/hbo.svg'
-import Head from './Head'
+
 
 Modal.setAppElement('#root')
 
@@ -42,7 +42,7 @@ const moviesList = [
 
   return (
     <>
-    <Head title="Movies" />
+    
     <div className={`${styles.movies} animeLeft`}>
       <img className={styles.scroll} src={arrow3} />
       <h1 className={styles.title}>Movies</h1>
