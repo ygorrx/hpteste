@@ -1,21 +1,21 @@
 <div align="center" id="top"> 
-  <img src="https://i.imgur.com/1O60nZz.png" alt="Harry Potter - World of Magic" />
+  <img src="https://i.imgur.com/wdbzpmY.png" alt="Harry Potter - World of Magic" />
 
   &#xa0;
 
   <!-- <a href="https://myPetz.netlify.app">myPetz</a> -->
 </div>
 
-<h1 align="center">myPetz</h1>
+<h1 align="center">Harry Potter - World of Magic</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/ygorrx/animals?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/ygorrx/hpteste?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/ygorrx/animals?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/ygorrx/hpteste?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/ygorrx/animals?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/ygorrx/hpteste?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/ygorrx/animals?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/ygorrx/hpteste?color=56BEB8">
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/animals?color=56BEB8" /> -->
 
@@ -39,7 +39,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{ygorrx}}" target="_blank">Ygor Oliveira</a>
+  <a href="https://github.com/ygorrx" target="_blank">Ygor Oliveira</a>
 </p>
 
 <br>
@@ -48,6 +48,7 @@
 
 This website was developed for a study case. I deciced to choose a random API from the repo: https://github.com/public-apis/public-apis. The one I choose was the Harry Potter one, who had some info about the characters. After that, I planned the whole website to fit the use of the API. I made everything, from the design to the animations.
 
+I had to fork the original API to make changes too, like adding images do the data I wanted to use.
 ## :sparkles: Features ##
 
 :heavy_check_mark: API consumption;\
@@ -61,6 +62,10 @@ The following tools were used in this project:
 - [React](https://pt-br.reactjs.org/)
 - [Lottie](https://lottiefiles.com/)
 - [React Modal](https://www.npmjs.com/package/react-modal)
+- [Harry Potter API](https://hp-api.herokuapp.com/)
+- [Heroku](https://hp-api-changes.herokuapp.com/)
+- [Netlify](https://app.netlify.com/)
+
 ## :white_check_mark: Requirements ##
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
@@ -69,7 +74,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{ygorrx}}/hpteste
+$ git clone https://github.com/ygorrx/hpteste
 
 # Access
 $ cd hpteste
