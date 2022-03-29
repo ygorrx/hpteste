@@ -310,6 +310,10 @@
 
  @media (max-width: 1024px){
   
+  .movies{
+    height: 1700px;
+  }
+
   .modal{
      top: 19%;
      left: 12%;
@@ -323,6 +327,7 @@
 
  @media (max-width: 768px){
   
+
   .modal{
     width: 570px;
      top: 19%;
@@ -473,3 +478,58 @@ margin-left: 7%;
   width: 50%;
 }
  }
+
+ @media (max-width: 425px){
+   .movies{
+     height: 2600px;
+   }
+
+   .modal{
+     width: 350px;
+     height: 600px;
+     top: 19%;
+     left: 8%;
+     right: auto;
+     bottom: auto;
+ }
+
+ .content{
+  width: 350px;
+  height: 600px;
+ }
+
+ }
+
+ @media (max-width: 375px){
+   .modal{
+    width: 325px;
+    height: 600px;
+    top: 19%;
+    left: 6%;
+    right: auto;
+    bottom: auto;
+}
+
+.content{
+ width: 325px;
+ height: 600px;
+}
+
+}
+
+@media (max-width: 320px){
+  .modal{
+   width: 300px;
+   height: 600px;
+   top: 19%;
+   left: 4%;
+   right: auto;
+   bottom: auto;
+}
+
+.content{
+width: 300px;
+height: 600px;
+}
+
+}
